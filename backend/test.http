@@ -1,0 +1,15 @@
+### Create an alert
+POST http://localhost:5000/api/alerts
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "latitude": 8.9806,
+  "longitude": 38.7578
+}
+
+### Get all alerts
+GET http://localhost:5000/api/alerts
+
+### Resolve alert (change 1 to your alert's id)
+PATCH http://localhost:5000/api/alerts/1/resolve
